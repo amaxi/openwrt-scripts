@@ -1,7 +1,7 @@
 #!/bin/ash
 
 DOMAIN="HOST.ipdns.hu"
-USERNAME="USR"
+USERNAME="USER"
 PASSWORD="PASS"
 MYIP=$(curl https://ipinfo.io/ip)
 MYDNSIP=$(nslookup "$DOMAIN" | awk '/^Address: / { print $2 }'|grep -o '[0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}')
